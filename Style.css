@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px;
+    background: linear-gradient(45deg, #84fab0 0%, #8fd3f4 50%, #ffb199 100%); /* 45deg= linksboven -> rechtonder begint(0*) met die kleur en gaat zo verder*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    color: white;
+    background-color: #6c5ce7;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 80px;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.mid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.mid a:hover {
+    color: #a29bfe;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.midden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    background-color: #ffffff;
+    max-width: 1200px;
+}
+
+.small-sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.small-section {
+    width: 30%;
+    min-width: 200px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.small-section h3 {
+    font-size: 1.2rem;
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.small-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.small-section li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.about-me {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.about-me h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #6c5ce7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.profile-photo:active {
+    box-shadow: none;
+    transform: translateY(0);
+    border: 2px solid #000000;
+}
+
+.intro {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    width: auto;
+    background-color: #f8f9fa;
+}
+
+th {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1faff;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.taal span {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.foto {
+    width: 232px;
+    height: 318px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.foto:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.foto:active {
+    box-shadow: none;
+    transform: translateY(0);
+    border: 2px solid #5a7d9a;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: auto;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
+    color: #5a7d9a;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+button {
+    margin-top: 0;
+    padding: 10px 20px;
+    background: #86a8e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a7d9a;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+        width: 120px;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .small-sections-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .small-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    table {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 50px;
+    }
+
+    table {
+        display: none;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        width: 95%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 15px;
+        width: 100px;
+    }
+
+    .intro {
+        font-size: 0.8rem;
+    }
+
+    .small-sections-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .small-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    table {
+        width: 95%;
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
